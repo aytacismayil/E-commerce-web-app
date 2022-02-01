@@ -7,6 +7,7 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import "./App.css";
 import "./stylesheets/layout.css";
+import "./stylesheets/products.css";
 
 
 const App = () => {
@@ -17,7 +18,7 @@ const App = () => {
         <Route path="/" exact element={<HomePage/>}/>
         <Route path="/login" exact element={<LoginPage/>}/>
         <Route path="/register" exact element={<RegisterPage/>}/>
-        <Route path="/Productinfo" exact element={<ProductInfo/>}/>
+        <Route path="/Productinfo/:productid" exact element={<ProductInfo/>}/>
         <Route path="/cart" exact element={<CartPage/>}/>
       </Routes>
     </BrowserRouter>
